@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <link rel="stylesheet" href="converter.css">
+    
+</head>
+<body>
+    <div id="main">
+        <h1>Height Converter</h1>
+        <div id="first">
+        <label for="height"><b>HEIGHT :</b></label>
+        <input type="text" id="hght" name="height"> <br> <br>
+    </div>
+    <div id="second">
+        <label for="inches"><b>INCHES :</b></label>
+        <input type="text" id="inch" name="inches"> <br> <br>
+    </div>
+    <div id="third">
+        <label for="inches"><b>C M</b></label>
+        <input type="text" id="out">
+       
+    </div>
+    <button onclick="converter()">SUBMIT</button><br> <br>
+       <SCRipt>
+        function converter(){
+            let height=document.getElementById("hght" ).value;
+            console.log(height);
+            let inch=height*12;
+            console.log(inch);
+            let cm=inch*2.54;
+            console.log(cm);
+            document.getElementById("inch").value=inch
+            document.getElementById("out").value=cm;
+        }
+       </SCRipt>
+    </div>
+</body>
+</html>
